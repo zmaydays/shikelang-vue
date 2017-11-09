@@ -14,7 +14,7 @@ module.exports = {
             loader: 'vue-loader'
         }, {
             test: /\.js$/,
-            loader: 'babel-loader',
+            loader: 'babel-loader'
         }]
     }
 };

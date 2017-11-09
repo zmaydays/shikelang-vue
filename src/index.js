@@ -1,16 +1,14 @@
 
-import Lazyload from './directives/lazyload.js';
+import Menu from './components/Menu/menu.vue';
 
-import Loading from './components/Loading/index.vue';
 
-const components = [];
+const components = [Menu];
 const install = function (Vue, opts = {}) {
-    Vue.use(Lazyload);
+    components.map(component => {
+        Vue.component(component.name, component);
+    });
 }
 
 export default {
     install
 }
-
-
-// console.log(11);
